@@ -5,67 +5,94 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fff8d6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff9c4;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/2910/2910791.png');
+    background-repeat: repeat;
+    background-size: 100px;
     color: #333;
-    background-image: url('https://images.unsplash.com/photo-1600269452121-3a5fc8e83d55?auto=format&fit=crop&w=1600&q=60');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 header {
-    background-color: rgba(255, 221, 0, 0.95);
+    background: linear-gradient(to right, #ffd700, #fff176);
     color: #000;
     text-align: center;
-    padding: 20px;
+    padding: 30px 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1em;
 }
 
 .subtitulo {
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(255, 255, 255, 0.95);
     text-align: center;
-    padding: 15px;
-    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #444;
+    border-top: 2px solid #ffd700;
+    border-bottom: 2px solid #ffd700;
 }
 
 main {
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(255, 255, 255, 0.9);
+    max-width: 1200px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
 }
 
 .grid a {
+    background: #fff8e1;
+    border: 1px solid #f9c802;
+    border-radius: 12px;
     text-align: center;
+    padding: 20px 10px;
     text-decoration: none;
     color: #000;
-    background: #fffbe7;
-    padding: 15px;
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid #f5d300;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .grid a:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 .grid img {
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
-    margin-bottom: 10px;
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.grid p {
+    font-size: 1em;
+    font-weight: bold;
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #ffd900;
+    background-color: #ffd700;
     color: #000;
     font-weight: bold;
+    border-top: 3px solid #fbc02d;
+    margin-top: 30px;
 }
